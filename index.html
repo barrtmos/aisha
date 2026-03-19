@@ -172,7 +172,7 @@ h1 {
 
   <p class="sub">Она уже в сети.<br>Осталось сделать шаг.</p>
 
-  <a class="btn" href="{offer}">
+  <a class="btn" href="{offer_link}">
     <span class="btn-line"></span>
     <span>Познакомиться</span>
     <span class="btn-circle">→</span>
@@ -205,7 +205,6 @@ let t = 0;
 function draw() {
   ctx.clearRect(0, 0, W, H);
 
-  // Туманность — синяя с фиолетовым
   const g1 = ctx.createRadialGradient(W*0.68, H*0.38, 0, W*0.68, H*0.38, W*0.52);
   g1.addColorStop(0,   'rgba(90,60,255,0.09)');
   g1.addColorStop(0.5, 'rgba(0,180,255,0.04)');
